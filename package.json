@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production"
   },
   "keywords": [],
   "author": "",
@@ -11,5 +13,9 @@
   "description": "",
   "dependencies": {
     "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^5.1.0",
+    "webpack-notifier": "^1.15.0"
   }
 }
