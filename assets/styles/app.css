@@ -59,7 +59,7 @@ footer {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.2);
     z-index: 10;
 }
 
@@ -77,6 +77,10 @@ footer {
     text-align: center;
     width: 100%;
     z-index: 100;
+}
+
+.slider-title {
+    margin: 30px;
 }
 
 .image-data span.slider-text {
@@ -101,9 +105,35 @@ a.slide-button {
     text-decoration: none;
     margin-top: 25px;
     transition: all 0.3s ease;
+    font-weight: bold;
 }
 
 a.slide-button:hover {
     color: #fff;
     background-color: #C87E4F;
+}
+
+.swiper-button-next {
+    margin-right: 50px;
+}
+
+.swiper-button-prev {
+    margin-left: 50px;
+} 
+
+.nav-btn::before, .nav-btn::after {
+    font-size: 25px;
+    color: #fff;
+}
+
+.swiper-pagination-bullet {
+    opacity: 1;
+    height: 12px;
+    width: 12px;
+    background-color: #fff !important;
+}
+
+.swiper-pagination-bullet-active {
+    border: 2px solid #fff;
+    background-color: #C87E4F !important;
 }
