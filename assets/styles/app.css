@@ -9,7 +9,17 @@
 body {
     background-color: white;
     font-family: "Lato", sans-serif;
+    animation: backgroundColorChange 45s infinite alternate ease-in-out;
 }
+    
+@keyframes backgroundColorChange {
+    0%   { background-color: #FFB6C1; }
+    25%  { background-color: #FFDAB9; }
+    50%  { background-color: #E6E6FA; }
+    75%  { background-color: #B0E0E6; }
+    100% { background-color: #FFB6C1; }
+}
+
 
 /* titre */
 .subtitle {
