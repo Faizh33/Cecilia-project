@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 final class ChromotherapieController extends AbstractController
 {
-    #[Route('/chromotherapie', name: 'app_chromotherapie')]
+    #[Route('/chromotherapie', name: 'chromotherapie')]
     public function index(): Response
     {
         return $this->render('chromotherapie/index.html.twig', [

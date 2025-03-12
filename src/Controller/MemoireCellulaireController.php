@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 final class MemoireCellulaireController extends AbstractController
 {
-    #[Route('/memoire/cellulaire', name: 'app_memoire_cellulaire')]
+    #[Route('/memoire/cellulaire', name: 'memoire_cellulaire')]
     public function index(): Response
     {
         return $this->render('memoire_cellulaire/index.html.twig', [
