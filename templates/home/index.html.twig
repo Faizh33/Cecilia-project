@@ -36,6 +36,7 @@
 {% endblock %}
 
 {% block main %}
+	<!-- Slider principal -->
 	<section class="slider-container swiper mySwiper">
 		<div class="wrapper swiper-wrapper">
 			<div class="slide swiper-slide">
@@ -46,7 +47,7 @@
 						Mémoire Cellulaire<br/>
 						Libération transgénérationnelle
 					</h2>
-					<a href="#" class="slide-button">Découvrir</a>
+					<a href="#" class="button slide-button">Découvrir</a>
 				</div>
 			</div>
 			<div class="slide swiper-slide">
@@ -57,7 +58,7 @@
 						Chromothérapie Cristalline<br/>
 						Ciel de Cristal
 					</h2>
-					<a href="#" class="slide-button">Découvrir</a>
+					<a href="#" class="button slide-button">Découvrir</a>
 				</div>
 			</div>
 			<div class="slide swiper-slide">
@@ -67,32 +68,37 @@
 					<h2 class="slider-title">
 						Prendre Rendez-vous
 					</h2>
-					<a href="#" class="slide-button">Réserver</a>
+					<a href="#" class="button slide-button">Réserver</a>
 				</div>
 			</div>
-						<div class="slide swiper-slide">
+			<div class="slide swiper-slide">
 				<img src="{{ asset('images/menhir3.jpg') }}" alt="Cécilia, entourée d'arbres dans une forêt avec un menhir derrière elle" class="slider-img" />
 				<div class="image-data">
 					<span class="slider-text">Près de 800 séances transmises, des libérations, <br />des prises de consciences, des changements de vie...</span>
 					<h2 class="slider-title">
 						Qui suis-je ?
 					</h2>
-					<a href="#" class="slide-button">Me découvrir</a>
+					<a href="#" class="button slide-button">Me découvrir</a>
 				</div>
 			</div>
-						<div class="slide swiper-slide">
+			<div class="slide swiper-slide">
 				<img src="{{ asset('images/zen.jpg') }}" alt="Salon de soin" class="slider-img" />
 				<div class="image-data">
 					<span class="slider-text">Pour développer votre conscience intérieur, <br />pour éveiller votre conscience primordiale.</span>
 					<h2 class="slider-title">
 						Informathèque
 					</h2>
-					<a href="#" class="slide-button">Découvrir</a>
+					<a href="#" class="button slide-button">Découvrir</a>
 				</div>
 			</div>
 		</div>
 		<div class="swiper-button-next nav-btn"></div>
 		<div class="swiper-button-prev nav-btn"></div>
 		<div class="swiper-pagination"></div>
+	</section>
+	<!-- Découvrir les séances -->
+	<section>
+		<h2 class="title text-center fs-1">Jelly dessert powder sweet lollipop biscuit. Tiramisu jelly-o carrot cake sesame snaps cake shortbread chupa chups tootsie roll. I love jelly-o soufflé jelly tootsie roll cheesecake I love cookie.</h2>
+		<button class="button d-flex justify-content-center mb-5">Découvrir les séances</button>
 	</section>
 {% endblock %}
