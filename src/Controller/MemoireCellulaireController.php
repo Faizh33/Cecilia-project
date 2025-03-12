@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Attribute\Route;
+
+final class MemoireCellulaireController extends AbstractController
+{
+    #[Route('/memoire/cellulaire', name: 'app_memoire_cellulaire')]
+    public function index(): Response
+    {
+        return $this->render('memoire_cellulaire/index.html.twig', [
+            'controller_name' => 'MemoireCellulaireController',
+        ]);
+    }
+}
