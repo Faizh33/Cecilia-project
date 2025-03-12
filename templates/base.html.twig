@@ -17,12 +17,34 @@
 
     <body>
         {% block header %}
-         <!--
-            <header>
-                <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
-                </nav>
+            <header class="row">
+                <div class="col-md-3">
+                    <div class="call-offered-container rounded-pill text-center">
+                        <p>Appel<br />Offert</p>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <!--Logo -->
+                    <img src="" alt="Logo" />
+                </div>
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <button class="btn btn-primary" type="button">
+                        RDV<br/>Agenda
+                    </button>
+                </div>
             </header>
-        -->
         {% endblock %}
 
         {% block body %}
@@ -40,7 +62,7 @@
                         <div id="footer-contact" class="col-md-4 d-flex flex-column align-items-center">
                             <div>
                                 <h4 class="subtitle">Echanger ensemble</h4>
-                                <p><a href="tel:0652217095" class="link">06 52 21 70 95</a>
+                                <p><a href="tel:0652217095" class="link fs-5"><b>06 52 21 70 95</b></a>
                                 <br><a href="mailto:cecilia.gampp@gmail.com" class="link">cecilia.gampp@gmail.com</a></p>
                                 <div class="social-network">
                                     <svg width="75" height="75" viewBox="0 0 100 100">
