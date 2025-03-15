@@ -5,17 +5,38 @@
 {% endblock %}
 
 {% block main %}
-<h2>Contact</h2>
-<form>
-    <label for="form-lname">Nom *</label>
-    <input type="text" id="form-lname" name="form-lname" required><br>
-    <label for="form-fname">Prénom *</label>
-    <input type="text" id="form-fname" name="form-fname" required><br>
-    <label for="form-title">Titre *</label>
-    <input type="text" id="form-title" name="form-title" required><br>
-    <label for="form-message">Message *</label>
-    <textarea id="form-message" name="form-message" rows="8" required></textarea><br>
-    <input type="submit" value="ENVOYER">
-</form>
-<p>Les informations saisies sur ce formulaire seront communiquées au propriétaire de ce blog via email. Vous pouvez exercer vos droits relatifs à vos données personnelles (accès, effacement, rectification, portabilité…) directement depuis ce formulaire contact. Le propriétaire du blog est informé qu’il dispose d’ un mois pour vous répondre. Pour en savoir plus sur la protection de vos données personnelles, <a href="https://www.over-blog.com/privacy-policy" class="link">cliquez ici</a>.</p>
+<div class="form-container">
+    <form class="contact-form">
+        <h2 class="form-title fs-1 text-center mb-5">Me contacter</h2>
+
+        <div class="row m-4">
+            <div class="col-md-6 d-flex align-items-start flex-column flex-md-row">
+                <label for="form-lname" class="me-md-3 mb-1 mb-md-0">Nom *</label>
+                <input type="text" id="form-lname" name="form-lname" class="w-100 w-md-auto form-input" required>
+            </div>
+            <div class="col-md-6 d-flex align-items-start flex-column flex-md-row">
+                <label for="form-fname" class="me-md-3 mb-1 mb-md-0">Prénom *</label>
+                <input type="text" id="form-fname" name="form-fname" class="w-100 w-md-auto form-input" required>
+            </div>
+        </div>
+
+        <div class="row m-4">
+            <div class="col-12 d-flex align-items-start flex-column flex-md-row">
+                <label for="form-title" class="me-md-3 mb-1 mb-md-0">Titre *</label>
+                <input type="text" id="form-title" name="form-title" class="w-100 w-md-auto form-input" required>
+            </div>
+        </div>
+
+        <div class="row m-4">
+            <div class="col-12 d-flex align-items-start flex-column flex-md-row">
+                <label for="form-message" class="me-md-3 mb-2 mb-md-0">Message *</label>
+                <textarea id="form-message" name="form-message" rows="5" class="form-control mb-5 w-100" required></textarea>
+            </div>
+        </div>
+
+        <input type="submit" class="button m-2 border m-auto" value="Envoyer">
+        <p class="mt-5"><i>Les informations saisies sur ce formulaire seront communiquées au propriétaire de ce blog via email. Vous pouvez exercer vos droits relatifs à vos données personnelles (accès, effacement, rectification, portabilité…) directement depuis ce formulaire contact. Le propriétaire du blog est informé qu’il dispose d’ un mois pour vous répondre. Pour en savoir plus sur la protection de vos données personnelles, <a href="https://www.over-blog.com/privacy-policy" class="link">cliquez ici</a>.</i></p>
+    </form>
+</div>
+
 {% endblock %}
