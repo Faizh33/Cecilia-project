@@ -3,7 +3,7 @@
 .row {
     margin-right: 0 !important;
     margin-left: 0 !important;
-  }
+}
 
 
 body {
@@ -64,16 +64,21 @@ header {
 }
 
 
-/* titre */
+/* titre et texte*/
 .title {
     font-family: "Dancing Script", cursive;
-    margin: 80px;
+    margin: 40px 80px 20px 80px;
     font-weight: 700;
 }
 
 .subtitle {
     font-family: "Merriweather", serif;
     font-weight: bold;
+}
+
+.text {
+    font-size: 20px;
+    margin: 0px 80px 20px 80px;
 }
 
 /* liens */
@@ -97,12 +102,126 @@ a.link:hover {
     margin-top: 25px;
     transition: all 0.3s ease;
     font-weight: bold;
-    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .button:hover {
     color: #fff;
     background-color: #C87E4F;
+}
+
+/* Formulaire */
+.form-container {
+    margin: 30px;
+}
+
+.contact-form {
+    padding: 50px;
+    width: 90%;
+    border-radius: 25px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.form-title {
+    font-family: "Dancing Script", cursive;
+    font-size: 44px;
+}
+
+label {
+    font-weight: bold;
+    margin: 10px;
+}
+
+textarea.form-control {
+    margin-left: 10px;
+    width: 80%;
+    resize: none;
+}
+
+.form-input:focus,
+textarea.form-control:focus,
+select:focus {
+    border-color: #FFDAB9;
+    outline: none;
+}
+
+label {
+    font-weight: bold;
+    margin: 10px;
+    white-space: nowrap;
+}
+
+.form-input, textarea.form-control {
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    animation: backgroundColorChangeLight 45s infinite alternate ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    box-sizing: border-box;
+    color: black;
+}
+
+@keyframes backgroundColorChangeLight {
+    0%   { background-color: rgba(255, 182, 193, 0.3); } /* LightPink */
+    25%  { background-color: rgba(255, 218, 185, 0.3); } /* PeachPuff */
+    50%  { background-color: rgba(230, 230, 250, 0.3); } /* Lavender */
+    75%  { background-color: rgba(176, 224, 230, 0.3); } /* PowderBlue */
+    100% { background-color: rgba(255, 182, 193, 0.3); } /* LightPink */
+}
+
+#form-lname {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    label {
+        min-width: 75px;
+        text-align: right;
+        display: inline-block;
+    }
+
+    .form-input,
+    textarea.form-control {
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .form-group {
+        display: flex;
+        align-items: center;
+    }
+
+    .form-input {
+        margin-bottom: 0px;
+    }
+
+    #form-lname, #form-title {
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .contact-form {
+        width: 70%;
+    }
+
+    .form-input, #form-title {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .contact-form {
+        width: 50%;
+    }
+
+    .form-input, #form-title {
+        margin-bottom: 30px;
+    }
 }
 
 /* footer */
@@ -210,3 +329,5 @@ a.slide-button {
     border: 2px solid #fff;
     background-color: #C87E4F !important;
 }
+
+/* Chromotherapie */
